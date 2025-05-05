@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="https://mir-s3-cdn-cf.behance.net/project_modules/source/23b9c9225114915.6817ccd5b7061.png">
+  <title>Carculator </title>
+
+  <link rel="stylesheet" href="static\styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="description" content="Estimez gratuitement le prix de votre voiture d'occasion avec Carculator">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/source/23b9c9225114915.6817ccd5b7061.png" alt="Carculator Logo" class="logo-image">
+        </div>
+
+        <nav class="nav-menu">
+          <div class="nav-item">
+            <button class="nav-button">
+              <span>Home</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="nav-item">
+            <button class="nav-button">
+              <span>Features</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="nav-item">
+            <button class="nav-button">
+              <span>Elements</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+        </nav>
+
+        <div class="social-links">
+          <a href="https://www.linkedin.com/company/carculator" target="_blank" rel="noopener noreferrer" class="social-link">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">Estimez Gratuitement Le Prix De Votre Voiture D'Occasion</h1>
+      <div class="hero-description">
+        <div class="hero-feature">
+          <i class="fa-solid fa-car"></i>
+          <p>Carculator vous aide à estimer la valeur de votre véhicule d'occasion.</p>
+        </div>
+        <div class="hero-features">
+          <div class="feature">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Basé sur des données locales</span>
+          </div>
+          <div class="feature">
+            <i class="fa-solid fa-brain"></i>
+            <span>Prédiction IA précise</span>
+          </div>
+          <div class="feature">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Rapide et gratuit</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Car Logos Grid -->
+  <section class="car-grid">
+    <div class="container">
+      <h2 class="section-title">Sélectionnez votre marque de voiture</h2>
+      <div class="logo-grid" id="logoGrid">
+        <!-- Logos directement dans le HTML -->
+        <div class="car-logo" data-car="Mercedes">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mercedes-Logo.svg/1200px-Mercedes-Logo.svg.png" alt="Mercedes">
+        </div>
+        <div class="car-logo" data-car="Chevrolet">
+          <img src="https://logo-marque.com/wp-content/uploads/2021/03/Chevrolet-Logo.png" alt="Chevrolet">
+        </div>
+        <div class="car-logo" data-car="Honda">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrfWfenrbxYGSZSMrH_gcGSzVtklWaOIlFeA&s" alt="Honda">
+        </div>
+        <div class="car-logo" data-car="Hyundai">
+          <img src="https://pngimg.com/d/hyundai_PNG11220.png" alt="Hyundai">
+        </div>
+        <div class="car-logo" data-car="Volkswagen">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Volkswagen_-_Logo.svg/2048px-Volkswagen_-_Logo.svg.png" alt="Volkswagen">
+        </div>
+        <div class="car-logo" data-car="Alfa Romeo">
+          <img src="https://logodownload.org/wp-content/uploads/2022/03/alfa-romeo-logo.png" alt="Alfa Romeo">
+        </div>
+        <div class="car-logo" data-car="Renault">
+          <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/032021/logo_renault.jpg?u5QtOlOaKeR4qs6o7lCo4RHFkAvYCALM&itok=AAUnl1M1" alt="Renault">
+        </div>
+        <div class="car-logo" data-car="Jeep">
+          <img src="https://logo-marque.com/wp-content/uploads/2021/09/Jeep-Logo-650x366.png" alt="Jeep">
+        </div>
+        <div class="car-logo" data-car="Citroen">
+          <img src="https://www.logo-voiture.com/wp-content/uploads/2023/08/die-geschichte-des-citroen-logos-1024x576.webp" alt="Citroen">
+        </div>
+        <div class="car-logo" data-car="BMW">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" alt="BMW">
+        </div>
+        <div class="car-logo" data-car="Land Rover">
+          <img src="https://cdn.worldvectorlogo.com/logos/land-rover-2.svg" alt="Land Rover">
+        </div>
+        <div class="car-logo" data-car="Audi">
+          <img src="https://di-uploads-pod3.dealerinspire.com/vindeversautohausofsylvania/uploads/2018/10/Audi-Logo-Banner.png" alt="Audi">
+        </div>
+        <div class="car-logo" data-car="Jaguar">
+          <img src="https://groupe-grim.com/jaguar-land-rover/wp-content/uploads/2023/01/logo-jaguar-2012-a-2021.png" alt="Jaguar">
+        </div>
+        <div class="car-logo" data-car="Suzuki">
+          <img src="https://i.pinimg.com/736x/ff/d4/ec/ffd4ecd571c52357e625e5c0e86d4b03.jpg" alt="Suzuki">
+        </div>
+        <div class="car-logo" data-car="Kia">
+          <img src="https://cdn.worldvectorlogo.com/logos/kia.svg" alt="Kia">
+        </div>
+        <div class="car-logo" data-car="Opel">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_52EFEApw7Gboik0LTVIwnWIzTdDtKDt-Zw&s" alt="Opel">
+        </div>
+        <div class="car-logo" data-car="Volvo">
+          <img src="https://www.transparentpng.com/download/volvo/GXscT1-volvo-logo-png-icon.png" alt="Volvo">
+        </div>
+        <div class="car-logo" data-car="Toyota">
+          <img src="https://logowik.com/content/uploads/images/647_toyota.jpg" alt="Toyota">
+        </div>
+        <div class="car-logo" data-car="Fiat">
+          <img src="https://cdn.worldvectorlogo.com/logos/fiat-3.svg" alt="Fiat">
+        </div>
+        <div class="car-logo" data-car="Peugeot">
+          <img src="https://logodownload.org/wp-content/uploads/2014/09/peugeot-logo-0-1.png" alt="Peugeot">
+        </div>
+        <div class="car-logo" data-car="Seat">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/SEAT_Logo_from_2017.svg" alt="Seat">
+        </div>
+        <div class="car-logo" data-car="Ford">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Ford_logo_flat.svg" alt="Ford">
+        </div>
+        <div class="car-logo" data-car="DFSK">
+          <img src="https://www.logo-voiture.com/wp-content/uploads/2024/06/logo-voiture-dfsk-1024x683.jpg" alt="DFSK">
+        </div>
+        <div class="car-logo" data-car="Nissan">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnF3OwMpqrNJ05i2uFcQcu1-afotlOg6ynng&s" alt="Nissan">
+        </div>
+        <div style="width: 100px;"></div>
+        <div style="width: 100px;"></div>
+        <div class="car-logo" data-car="Skoda">
+          <img src="https://i.pinimg.com/736x/35/03/20/3503207527635b1da82d92802b5eafca.jpg" alt="Skoda">
+        </div>
+        <div class="car-logo" data-car="Dacia">
+          <img src="https://www.logo-voiture.com/wp-content/uploads/2021/01/Dacia-logo-1920x1080-grand.png" alt="Dacia">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Car Form Modal -->
+  <div class="modal" id="carFormModal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2 id="carTitle">Marque</h2>
+        <button class="close-button" id="closeCarForm">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="carType">Modèle de voiture</label>
+          <input type="text" id="carType" placeholder="Ex: Golf, Clio, 308...">
+        </div>
+
+        <div class="form-group">
+          <label for="carModel">Année de sortie</label>
+          <input type="text" id="carModel" placeholder="Ex: 2018">
+        </div>
+
+        <div class="form-group">
+          <label for="fuelType">Type de carburant</label>
+          <button id="fuelSelectBtn" class="select-button">
+            <span id="fuelDisplay">Sélectionner un carburant</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
+
+        <div class="form-group">
+          <label for="puissanceSlider">
+            Puissance fiscale: <span id="puissanceValue">5</span> CV
+          </label>
+          <input type="range" id="puissanceSlider" min="4" max="150" value="5">
+        </div>
+
+        <div class="form-group">
+          <label for="kmSlider">
+            Kilométrage: <span id="kmValue">50000</span> km
+          </label>
+          <input type="range" id="kmSlider" min="0" max="300000" step="1000" value="50000">
+        </div>
+
+        <div class="form-group transmission-group">
+          <span>Transmission:</span>
+          <div class="toggle-container">
+            <span id="manualLabel" class="transmission-label active">Manuel</span>
+            <label class="toggle">
+              <input type="checkbox" id="transmissionToggle">
+              <span class="toggle-slider"></span>
+            </label>
+            <span id="autoLabel" class="transmission-label">Automatique</span>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button id="resetBtn" class="reset-button">Effacer</button>
+          <button id="submitBtn" class="submit-button">Estimer le prix</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fuel Selection Modal -->
+  <div class="modal" id="fuelModal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container fuel-modal">
+      <div class="modal-body">
+        <h3 class="fuel-title">Quel type de carburant ?</h3>
+        <div class="fuel-options">
+          <button class="fuel-option" data-fuel="Essence">Essence</button>
+          <button class="fuel-option" data-fuel="Diesel">Diesel</button>
+          <button class="fuel-option" data-fuel="Hybride">Hybride</button>
+          <button class="fuel-option" data-fuel="Electrique">Electrique</button>
+        </div>
+        <div class="fuel-actions">
+          <button id="cancelFuel" class="cancel-button">Annuler</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/e24e82225114915.6817fde2cfe0a.png" alt="Carculator Logo" class="footer-logo-image">
+        </div>
+        <div class="footer-copyright">
+          © <span id="currentYear"></span> Carculator. Tous droits réservés.
+        </div>
+        <div class="social-share">
+          <div class="menu">
+            <div class="toggle">
+              <i class="fa-regular fa-share-from-square"></i>
+            </div>
+            <li style="--i: 0; --clr: #1877f2">
+              <a href="#"><i class="fa-regular fa-circle"></i><i class="fab fa-facebook-f icon-center"></i></a>
+            </li>
+            <li style="--i: 1; --clr: #0a66c2">
+              <a href="#"><i class="fa-regular fa-circle"></i><i class="fab fa-linkedin-in icon-center"></i></a>
+            </li>
+            <li style="--i: 2; --clr: #1b1e21">
+              <a href="#"><i class="fa-regular fa-circle"></i><i class="fab fa-github icon-center"></i></a>
+            </li>
+            <li style="--i: 3; --clr: #1da1f2">
+              <a href="#"><i class="fa-regular fa-circle"></i><i class="fab fa-x-twitter icon-center"></i></a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="static\script.js"></script>
+</body>
+</html>
