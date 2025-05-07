@@ -1,14 +1,23 @@
 from flask import Flask, render_template, request, jsonify
 import pickle
-import numpy as np
+import joblib
+import local_config as cfg
+import os
 
 app = Flask(__name__)
 
+# Definir les chemins d'accès aux fichiers de modèle et d'encodeurs
+scaler_path = os.path.join(cfg.BASE_PATH, "scaler.pkl")
+# model_path = os.path.join(cfg.BASE_PATH, "rf_model_op.pkl")
+model_path = os.path.join(cfg.BASE_PATH, "rf_model_op.joblib")
+marque_encoder_path = os.path.join(cfg.BASE_PATH, "marque_encoder.pkl")
+modele_encoder_path = os.path.join(cfg.BASE_PATH, "modele_encoder.pkl")
+
 # Charger modèle et outils
-model = pickle.load(open(r"C:\Users\Mouad tace\Desktop\proget de vehicule\nicelook\rf_model.pkl", "rb"))
-marque_encoder = pickle.load(open(r"C:\Users\Mouad tace\Desktop\proget de vehicule\nicelook\marque_encoder.pkl", "rb"))
-modele_encoder = pickle.load(open(r"C:\Users\Mouad tace\Desktop\proget de vehicule\nicelook\modele_encoder.pkl", "rb"))
-scaler = pickle.load(open(r"C:\Users\Mouad tace\Desktop\proget de vehicule\nicelook\scaler.pkl", "rb"))
+model = joblib.load(model_path)
+marque_encoder = pickle.load(open(marque_encoder_path, "rb"))
+modele_encoder = pickle.load(open(modele_encoder_path, "rb"))
+scaler = pickle.load(open(scaler_path, "rb"))
 
 # Encodage carburant
 def encode_carburant(carburant):
